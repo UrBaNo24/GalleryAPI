@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+  <div class="overlay">
+    <div class="slideshow">
+      <span class="btn_cerrar">&times;</span>
+      <div class="botones atras">
+        <span><</span>
+      </div>
+      <div class="botones adelante">
+        <span>></span>
+      </div>
+      <img src="imagen" alt="" id="img_slideshow" data-img="">
+    </div>
+  </div>
+  <section>
+    <div class="container" id="container">
+      <div class="header">
+        <h1 class="titulo">Galeria</h1>
+        <form>
+          <input type="text" placeholder="Search"> <!-- Buscador -->
+          <ion-icon name="search-outline"></ion-icon>
+        </form>
+      </div>
+        <div class="gallery" id="gallery"> <!-- En este div se muestran las fotos-->
+        </div>
+      <a class="load-more" data-img="curated">Cargar mas</a>
+    </div>
+  </section>
+  
+  <script defer src="./main.js"></script>
+  <script defer src="./carrusel.js"></script>
+</body>
+</html>
