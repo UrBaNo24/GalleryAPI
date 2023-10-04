@@ -65,7 +65,6 @@ class Gallery{
       const baseURL = `https://api.pexels.com/v1/curated?page=${index}&per_page=9`; //The last number in the URL indicates how many photos I want to show per page
       const data = await this.fetchImages(baseURL);
       this.createPhotos(data.photos)
-      console.log(data)
     }
 
     async fetchImages(baseURL){ 
